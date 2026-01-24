@@ -10,7 +10,7 @@ install-debian-packages:
 install-vim:
 	test -f ~/.vim/bundle/Vundle.vim/README.md || (git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim && stow --dotfiles vim && vim +PluginInstall +qall)
 
-all: install-debian-packages install-vim
+install-dotfiles:
 	# This requires ~/.gnupg/ which includes secrets
 	stow --dotfiles git
 	stow --dotfiles screen
