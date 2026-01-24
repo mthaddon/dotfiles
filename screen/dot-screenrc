@@ -1,0 +1,22 @@
+# Allow bold colors - necessary for some reason
+attrcolor b ".I"
+
+# Tell screen how to set colors. AB = background, AF=foreground
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+
+# Enables use of shift-PgUp and shift-PgDn
+termcapinfo xterm|xterms|xs|rxvt ti@:te@
+
+# Erase background with current bg color
+defbce "on"
+
+# Enable 256 color term
+term xterm-256color
+
+# Cache 30000 lines for scroll back
+defscrollback 30000
+
+hardstatus alwayslastline 
+backtick 1 0 0 battery-percentage.sh
+# hardstatus string '%{b KG}SERIOUS-RACING %{= Kd} %{= KG}%-w%{= Kr}|%{= KB}%n %t%{= Kr}|%{= KG}%+w %-= %{KG} %H%{KW} %{gk}%c %{-} %1`'
+hardstatus string '%{= Kd} %{= KG}%-w%{= Kr}|%{= KB}%n %t%{= Kr}|%{= KG}%+w %-= %{KG} %H%{KW} %{gk}%c %{-} %1`'

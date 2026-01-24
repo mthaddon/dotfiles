@@ -1,0 +1,26 @@
+[credential]
+	helper = store
+[user]
+	email = tom@haddons.net
+	name = Tom Haddon
+	signingkey = 955C6FAE87FFCD9BB898BF95ACB2C7F6D617A9BE
+[alias]
+    co = checkout
+    ci = commit
+    st = status
+    br = branch
+    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+    type = cat-file -t
+    dump = cat-file -p
+[pager]
+    status = true
+[url "git+ssh://mthaddon@git.launchpad.net/"]
+    insteadof = lp:
+[url "https://github.com/"]
+    insteadof = gh:
+[gitreview]
+	username = mthaddon
+[commit]
+	gpgsign = true
+[init]
+	defaultBranch = main

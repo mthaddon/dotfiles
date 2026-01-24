@@ -1,0 +1,78 @@
+set nocompatible              
+filetype off                  
+
+" include all subdirs in path
+set path+=**
+
+set wildmenu
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" control p for search
+Plugin 'ctrlpvim/ctrlp.vim'
+
+" vim-go
+Plugin 'fatih/vim-go'
+
+" vim-javascript
+Plugin 'pangloss/vim-javascript'
+
+" vim-prettier
+Plugin 'prettier/vim-prettier'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+
+filetype plugin indent on
+
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set tw=78
+set expandtab
+set bg=dark
+set spell spelllang=en_gb
+
+let python_highlight_all=1
+syntax on
+
+au BufNewFile,BufRead *.py,*.php
+    \ set tabstop=4
+    \ softtabstop=4
+    \ shiftwidth=4
+    \ tw=120
+    \ relativenumber
+    \ number
+    \ nospell
+
+au BufNewFile,BufRead *.go
+    \ set relativenumber
+    \ number
+
+au BufNewFile,BufRead *.cpp,*h
+    \ set relativenumber
+    \ number
+    \ autoindent
+    \ noexpandtab
+    \ tabstop=4
+    \ shiftwidth=4
+
+au BufNewFile,BufRead *.js,*.html,*.css,*.json
+    \ set tabstop=2 
+    \ softtabstop=2
+    \ shiftwidth=2
+    \ tw=131
+    \ relativenumber
+    \ number
+    \ nospell
+
+" Try to get rid of bad movement habits
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
