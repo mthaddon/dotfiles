@@ -1,5 +1,4 @@
 DEBIAN_DEPS = \
-			  handbrake \
 			  screen \
 			  stow \
 			  vim
