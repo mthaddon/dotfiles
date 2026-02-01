@@ -11,5 +11,5 @@ install-dotfiles:
 	# This requires ~/.gnupg/ which includes secrets
 	stow --dotfiles git
 	stow --dotfiles screen
-	test -f ~/.vim/bundle/Vundle.vim/README.md && rm -rf ~/.vim || true
+	test -f ~/.vim/bundle/Vundle.vim/README.md && rm -rf ~/.vim/bundle || true
 	stow --dotfiles vim && git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim && vim +PluginInstall +qall
