@@ -1,0 +1,13 @@
+# Create relevant screen windows
+screen -t bash 0 bash
+chdir /home/mthaddon/repos/serious-racing.com/trunk
+screen -t sr-code 1 bash
+screen -t sr-incus 2 incus exec serious-racing su - ubuntu
+screen -t sr-bzr 3 bash
+chdir /home/mthaddon/repos/akm/taat-db-web
+screen -t akm-code 4 bash
+screen -t akm-git 5 bash
+screen -t akm-shell 6 bash
+
+# For new windows
+chdir /home/mthaddon
