@@ -17,5 +17,5 @@ term xterm-256color
 defscrollback 30000
 
 hardstatus alwayslastline 
-backtick 1 0 0 battery-percentage.sh
+backtick 1 0 0 $HOME/.dotfiles/bin/battery-percentage.sh
 hardstatus string '%{= Kd} %{= KG}%-w%{= Kr}|%{= KW}%n %t%{= Kr}|%{= KG}%+w %-= %{KG} %H%{KW} %{gk}%c %{-} %1`'
