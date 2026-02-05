@@ -1,3 +1,15 @@
+bindkey -k k1 select 1   #  F1 = screen 1
+bindkey -k k2 select 2   #  F2 = screen 2
+bindkey -k k3 select 3   #  F3 = screen 3
+bindkey -k k4 select 4   #  F4 = screen 4
+bindkey -k k5 select 5   #  F5 = screen 5
+bindkey -k k6 select 6   #  F6 = screen 6
+bindkey -k k7 select 7   #  F7 = screen 7
+bindkey -k k8 select 8   #  F8 = screen 8
+bindkey -k k9 select 9   #  F9 = screen 9
+bindkey "^[[21~" prev    # F10 = prev (F11 is fullscreen)
+bindkey -k F2 next       # F12 = next
+
 # Allow bold colors - necessary for some reason
 attrcolor b ".I"
 
@@ -18,5 +30,5 @@ defscrollback 30000
 
 hardstatus alwayslastline 
 backtick 1 0 0 $HOME/.dotfiles/bin/battery-percentage.sh
-hardstatus string '%{= Kd} %{= KG}%-w%{= Kr}|%{= KW}%n %t%{= Kr}|%{= KG}%+w %-= %{KG} %H %l%{KW} %{gk}%D %Y-%m-%d %c %{-} %1`'
+hardstatus string '%{= Kd} %{= KG}%-w%{= KC}[%{= KW}%n %t%{= KC}]%{= KG}%+w %-= %{KG} %H %l%{KW} %{gk}%D %Y-%m-%d %c %{-} %1`'
 # To reload after changes: ctrl+a :source ~/.screenrc <enter>
