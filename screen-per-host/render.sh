@@ -8,5 +8,7 @@ cp ${HOME}/.dotfiles/screen-per-host/dot-screenrc ${HOME}/.dotfiles/screen/dot-s
 
 # If we have a per-host windows file, append it to the screenrc file.
 if [ -f "${HOME}/.dotfiles/screen-per-host/${HOSTNAME}-windows" ]; then
+	# Add a blank line
+	echo "" >> ~/.dotfiles/screen/dot-screenrc
 	cat "${HOME}/.dotfiles/screen-per-host/${HOSTNAME}-windows" >> ~/.dotfiles/screen/dot-screenrc
 fi
