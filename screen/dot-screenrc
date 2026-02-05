@@ -18,4 +18,4 @@ defscrollback 30000
 
 hardstatus alwayslastline 
 backtick 1 0 0 $HOME/.dotfiles/bin/battery-percentage.sh
-hardstatus string '%{= Kd} %{= KG}%-w%{= Kr}|%{= KW}%n %t%{= Kr}|%{= KG}%+w %-= %{KG} %H%{KW} %{gk}%c %{-} %1`'
+hardstatus string '%{= Kd} %{= KG}%-w%{= Kr}|%{= KW}%n %t%{= Kr}|%{= KG}%+w %-= %{KG} %H %l%{KW} %{gk}%D %Y-%m-%d %c %{-} %1`'
