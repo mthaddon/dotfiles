@@ -1,3 +1,4 @@
 *.swp
+vim/dot-vim/.netrwhist
 vim/dot-vim/bundle
 screen/dot-screenrc
