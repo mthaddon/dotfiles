@@ -29,6 +29,7 @@ term xterm-256color
 defscrollback 30000
 
 hardstatus alwayslastline 
-backtick 1 0 0 $HOME/.dotfiles/bin/battery-percentage.sh
-hardstatus string '%{= Kd} %{= KG}%-w%{= KC}[%{= KW}%n %t%{= KC}]%{= KG}%+w %-= %{KG} %H %l%{KW} %{gk}%D %Y-%m-%d %c %{-} %1`'
+backtick 1 0 0 $HOME/.dotfiles/bin/loadavg-1m.sh
+backtick 2 0 0 $HOME/.dotfiles/bin/battery-percentage.sh
+hardstatus string '%{= Kd} %{= KG}%-w%{= KC}[%{= KW}%n %t%{= KC}]%{= KG}%+w %-= %{KG} %H %{KC}%1`%{KW} %{gk}%D %Y-%m-%d %c %{-} %2`'
 # To reload after changes: ctrl+a :source ~/.screenrc <enter>
