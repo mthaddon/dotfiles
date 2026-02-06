@@ -6,6 +6,6 @@ while true; do
 	DOWN=$(echo ${NETWORK_OUTPUT} | awk '{print $1}')
 	UP=$(echo ${NETWORK_OUTPUT} | awk '{print $2}')
 	# echo "↓${DOWN}/↑${UP}"
-	echo "D${DOWN}/U${UP}"
+	echo "${DOWN}/^${UP}"
 	sleep 2
 done
