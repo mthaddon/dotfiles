@@ -28,6 +28,9 @@ term xterm-256color
 # Cache 30000 lines for scroll back
 defscrollback 30000
 
+# Turn off startup message
+startup_message off
+
 hardstatus alwayslastline 
 backtick 1 0 0 $HOME/.dotfiles/bin/loadavg-1m.sh
 backtick 2 0 0 $HOME/.dotfiles/bin/network-traffic.sh
