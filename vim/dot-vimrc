@@ -50,6 +50,11 @@ au BufNewFile,BufRead *.py,*.php
     \ number
     \ nospell
 
+au BufNewFile,BufRead *.c
+    \ set noexpandtab
+    \ relativenumber
+    \ number
+
 au BufNewFile,BufRead *.go
     \ set relativenumber
     \ number
